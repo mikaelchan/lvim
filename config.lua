@@ -47,7 +47,26 @@ lvim.plugins = {
   },
   {
     "catppuccin/nvim",
-    name = "catppuccin"
+    name = "catppuccin",
+    config = function()
+      require("catppuccin").setup({
+        integrations = {
+          alpha = true,
+          gitsigns = true,
+          harpoon = true,
+          hop = true,
+          lightspeed = true,
+          mason = true,
+          cmp = true,
+          nvimtree = true,
+          treesitter = true,
+          treesitter_context = true,
+          telescope = true,
+          illuminate = true,
+          which_key = true
+        },
+      })
+    end
   }
 }
 lvim.builtin.which_key.mappings["S"] = {
