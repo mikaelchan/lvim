@@ -6,6 +6,7 @@ lvim.transparent_window = true
 lvim.colorscheme = "catppuccin"
 vim.opt.relativenumber = true
 vim.opt.cmdheight = 0
+vim.opt.colorcolumn = "120"
 lvim.keys.insert_mode['jk'] = "<Esc>"
 lvim.keys.normal_mode['<S-h>'] = ":BufferLineCycleNext<Enter>"
 lvim.keys.normal_mode['<S-l>'] = ":BufferLineCyclePrev<Enter>"
