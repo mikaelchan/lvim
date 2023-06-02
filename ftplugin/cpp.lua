@@ -1,7 +1,7 @@
 local clangd_opts = {
   cmd = {
     "clangd",
-    "--offset-encoding=utf-8",
+    "--offset-encoding=utf-16",
   }
 }
 
