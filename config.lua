@@ -35,7 +35,7 @@ lvim.autocommands = {
 local linters = require "lvim.lsp.null-ls.linters"
 linters.setup {
   { name = "cppcheck" },
-  { name = "flake8" }
+  { name = "flake8",  args = { "--max-line-length", "120" } }
 }
 -- Formatters
 local formatters = require "lvim.lsp.null-ls.formatters"
