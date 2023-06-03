@@ -41,7 +41,7 @@ linters.setup {
 local formatters = require "lvim.lsp.null-ls.formatters"
 formatters.setup {
   { name = "clang_format" },
-  { name = "autopep8" }
+  { name = "autopep8",    args = { "--max-line-length", "120", "--experimental" } }
 }
 -- plugins
 lvim.plugins = {
