@@ -9,8 +9,8 @@ vim.opt.cmdheight = 0
 vim.opt.colorcolumn = "120"
 -- KeyMappings
 lvim.keys.insert_mode['jk'] = "<Esc>"
-lvim.keys.normal_mode['<S-h>'] = ":BufferLineCycleNext<Enter>"
-lvim.keys.normal_mode['<S-l>'] = ":BufferLineCyclePrev<Enter>"
+lvim.keys.normal_mode['<S-l>'] = ":BufferLineCycleNext<Enter>"
+lvim.keys.normal_mode['<S-h>'] = ":BufferLineCyclePrev<Enter>"
 lvim.builtin.which_key.mappings["S"] = {
   name = "Session",
   c = { "<cmd>lua require('persistence').load()<cr>", "Restore last session for current dir" },
